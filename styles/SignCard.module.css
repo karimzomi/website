@@ -1,0 +1,45 @@
+.CardContainer{
+    display: flex;
+    border: 1px solid var(--borderColor);
+    margin: 5px;
+    background-color: white;
+    border-radius: 8px;
+
+}
+.CardContainer h1{
+    font-size: 15px;
+}
+.CardContainer p{
+    color: #222222;
+    font-size: 10px;
+}
+.CardContainer div:first-child {border-right: 1px solid var(--borderColor) ; }
+.CardContainer div{
+    position: relative;
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CardContainer .checked{
+position: absolute;
+top: -13px;
+background-color: white;
+background-image: url("/check_circle_black_24dp.svg") ;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 27px;
+width: 27px;
+border-radius:50%;
+}
+
+@media screen and (max-width:425px) {
+.CardContainer{flex-direction: column;}
+.CardContainer div:first-child {border: none ; border-bottom:  1px solid var(--borderColor); }
+.CardContainer div{
+    justify-content: center;
+    align-items: center;
+}
+}
+

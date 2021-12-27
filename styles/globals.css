@@ -1,11 +1,16 @@
+:root{
+  --bgColor_main:#F2F2F2;
+  --bgColor_secondary:#222222;
+  --borderColor:#707070;
+  --whiteTextColor:#FFFFFF;
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Segoe UI;
+  background-color: var(--bgColor_main);
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +18,11 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#Container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
