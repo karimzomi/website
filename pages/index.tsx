@@ -42,6 +42,13 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     }
   } catch (error) {
     console.error(error);
+    return {
+      redirect: {
+        destination: '/SignIn',
+        permanent: false
+      },
+      props: {}
+    }
   }
   return { props: {} }
 }
